@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-gradiente {
+    background: #0a0300;
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo {
+    height: auto;
+    padding: 24px 0;
+    width: 55%;
+
+    border-radius: 100%;
+
+}
+
+#menu {
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 24px 0;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    padding: 16px 24px;
+
+    backdrop-filter: blur(4px) saturate(180%);
+    -webkit-backdrop-filter: blur(4px) saturate(180%);
+
+    background-color: #0c0b0c;
+    font-weight: 500;
+
+    transition: background 0.2s;
+
+    border: 3px solid;
+
+    border-image-source: linear-gradient(to bottom, #ff0000, #ffff00, #00ff00, #0000ff);
+    border-image-slice: 1;
+    animation: mudar-cor 5s infinite;
+
+    border-radius: px;
+}
+
+@keyframes mudar-cor {
+    0% {
+        border-image-source: linear-gradient(to bottom, #ff0000, #ffff00, #00ff00, #0000ff);
+    }
+
+    50% {
+        border-image-source: linear-gradient(to bottom, #00ff00, #0000ff, #ff0000, #ffff00);
+    }
+
+    100% {
+        border-image-source: linear-gradient(to bottom, #ff0000, #ffff00, #00ff00, #0000ff);
+    }
+
+}
+
+ul li a:hover {
+    background: #050002;
+    color: #ffefd5;
+}
+
+.cardapio {
+    color: #dddddd;
+    text-decoration: none;
+    ;
+}
+
+#social-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 24px 0;
+    font-size: 24px;
+}
+
+#social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+#social-links a:hover {
+    background: rgb(231, 231, 231);
+
+    backdrop-filter: blur(4px) saturate(180%);
+    -webkit-backdrop-filter: blur(4px) saturate(180%);
+}
+
+.wpp {
+    color: rgb(72, 221, 52)
+}
+
+.instagram {
+    color: rgb(180, 40, 117);
+}
